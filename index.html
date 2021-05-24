@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>QUIZ APP</title>
+	<meta charset="utf-8">
+	<meta name='viewport' content='width=device-width,initial-scale=1'>
+	<link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+	<div class='home-box custom-box '>
+		<h3>Instruction</h3>
+		<!-- <p>total number of questions:<span class='total-question'>5</span></p> -->
+		<button type='submit' class='btn' onclick='startQuiz()'>start quiz</button>
+	</div>
+	<div class='quiz-box custom-box hide'>
+		<div class='question-number'>
+			<!-- <em>Question 1 of 5</em> -->what
+		</div>
+		<div class='question-text'>
+			<!-- which month comes right before june?? -->
+		</div>
+		<div class='option-container'>
+			<!-- <div class='option'>july</div>
+			<div class='option'>may</div>
+			<div class='option'>september</div>
+			<div class='option'>august</div> -->
+		</div>
+		<div class='next-question-button'>
+			<button type='button' class='btn' onclick='next()'>next</button>
+		</div>
+		<div class='answer-indicator'>
+		
+		</div>
+	</div>
+	<div class='result-box custom-box hide '>
+		<h1>quiz result</h1>
+		<table>
+			<tr>
+				<td>total questions</td>
+				<td><span class='total-questions'></span></td>
+			</tr>
+			<tr>
+				<td>Attempts</td><td>
+					<span class='attempts'></span></td>
+			</tr>
+			<tr>
+				<td>correct</td><td>
+					<spam class='correct'></spam></td>
+			</tr>
+			<tr>
+				<td>wrong</td><td>
+					<spam class='incorrect'></spam></td>
+				</tr>
+			<tr>
+				<td>precentage</td>
+				<td><span class='percentage'></span></td>
+			</tr>
+			<tr>
+				<td>total score</td>
+				<td><span class='total-score'></span></td>
+			</tr>
+		</table>
+		<div class='inline'>
+		<button class='sub' onclick='restart()'>try Again</button>
+		<button class='sub' onclick='goToHome()'>go to home</button>
+	</div>
+	</div>
+	<script type="text/javascript" src='questions.js'></script>
+	<script type="text/javascript" src='quiz.js'></script>
+
+</body>
+</html>
