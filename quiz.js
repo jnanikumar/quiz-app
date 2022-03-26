@@ -20,7 +20,7 @@ const quiz =[
 {
 	q:'9+10=18',
 	options:['true','false'],
-	answer:0
+	answer:1
 },
 
 
